@@ -1,0 +1,2 @@
+Ceci est un fichier test.
+Ce fichier contient des données.
