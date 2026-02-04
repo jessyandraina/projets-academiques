@@ -1,0 +1,3 @@
+test.txt
+monfichierlocal
+fichierTheresa.txt 172.16.5.42:4000
