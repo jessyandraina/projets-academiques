@@ -1,0 +1,5 @@
+Bonjour, je m'appelle Jessy et je travaille sur un projet de réseau très intéressant. 
+Ce projet consiste à créer un protocole de transfert de fichiers entre plusieurs clients et serveurs en Java. 
+Nous utilisons des sockets TCP et des messages encodés en Base64. 
+Chaque fichier est fragmenté en blocs de 500 caractères pour assurer la stabilité de la transmission et la reconstruction correcte côté serveur. 
+Ce texte contient exactement 513 caractères, oui oui ! 
