@@ -28,5 +28,10 @@ fichiers hébergés sur des serveurs pairs distants.
 - Protocoles applicatifs
 - Modélisation UML (diagrammes de classes et de séquence)
 
+### Apprentissages
+- Compréhension du fonctionnement des communications TCP
+- Conception d’un protocole applicatif simple
+- Gestion de la concurrence côté serveur
+
 ### Contexte
 Projet réalisé en équipe dans un cadre académique.
