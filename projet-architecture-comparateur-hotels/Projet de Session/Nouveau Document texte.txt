@@ -1,0 +1,65 @@
+Section : Évaluation de l'Architecture
+Introduction
+L’évaluation de l’architecture vise à vérifier si le système respecte les attributs de qualité définis, à savoir modificabilité, déployabilité, et utilisabilité, tout en mettant en lumière les choix techniques et les compromis effectués lors de la conception. Cette évaluation se base sur l'analyse du code fourni, la structure logicielle et l'implémentation.
+
+1. Modificabilité
+Objectif : Garantir que le système peut évoluer facilement, notamment en ajoutant de nouvelles fonctionnalités (ex : intégration de nouvelles plateformes de réservation ou ajout d'autres produits comme la location de voitures).
+
+Analyse :
+
+Conception modulaire :
+Les classes pour les différents composants (User, Hotel, Car, etc.) sont bien séparées, respectant le principe de séparation des préoccupations.
+Le système repose sur une architecture basée sur des interfaces et des abstractions, comme l’utilisation de IUserRepository pour définir des contrats de services.
+Injection de dépendances :
+Les dépendances, telles que MongoUserRepository et BookingRepository, sont injectées via un mécanisme central dans dependancy.py. Cela facilite la substitution de modules pour implémenter de nouvelles fonctionnalités.
+Illustration :
+
+Code d'intégration modulaire :
+python
+Copier le code
+user_controller = UserController(user_repository)
+booking_controller = BookingController(booking_repository)
+Les dépendances sont injectées lors de l’instanciation des contrôleurs, facilitant les modifications futures.
+Ajout potentiel d'une nouvelle fonctionnalité : Une classe comme Flight pourrait être ajoutée en suivant l’exemple de Hotel et Car, avec une méthode to_dict standardisée.
+Limites : Le fichier JSON utilisé comme base de données pour les hôtels limite les évolutions. Une migration vers une source de données unifiée (MongoDB ou API) est recommandée.
+2. Déployabilité
+Objectif : Assurer que le système est accessible via un navigateur web et peut fonctionner sur divers appareils (PC, tablettes, smartphones).
+
+Analyse :
+
+L’application utilise Flask pour gérer le backend et MongoDB pour stocker les données. Ces choix permettent une grande flexibilité et une compatibilité multiplateforme.
+L'intégration de CORS garantit l'accessibilité depuis des applications clientes situées sur d'autres domaines.
+Pipeline de déploiement : Bien que le système puisse être facilement hébergé sur des plateformes comme Heroku ou Docker, aucun script CI/CD n’est présent pour automatiser le déploiement.
+Illustration :
+
+Configuration de base pour MongoDB :
+python
+Copier le code
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/mydatabase")
+Le stockage des données dans MongoDB garantit une scalabilité pour les environnements de production.
+Limites : Le manque de documentation et de scripts pour automatiser le déploiement peut ralentir les évolutions ou l'installation sur un nouvel environnement.
+3. Utilisabilité
+Objectif : Proposer une interface utilisateur intuitive pour permettre des actions comme la recherche, le tri, et le filtrage des hôtels.
+
+Analyse :
+
+L'API fournit des points d'entrée pour les recherches (routes /hotels et /cities).
+L’implémentation de services comme HotelService est claire et standardisée, facilitant la compréhension et les tests.
+La recherche est limitée à des données préchargées via hotels.json. Bien que fonctionnelle, cela restreint les capacités dynamiques d'une application réelle.
+Illustration :
+
+Exemple de requête à l’API :
+Requête GET pour rechercher des hôtels à Paris :
+sql
+Copier le code
+GET /hotels?search=paris
+Résultat filtré basé sur les données JSON.
+Limites :
+L’utilisation de fichiers JSON comme source de données diminue la flexibilité.
+Les clés API initialement prévues pour des plateformes de réservation ont été abandonnées en raison de leur expiration ou de limitations des services.
+4. Problèmes Rencontrés et Solutions
+Problème des clés API expirées : Initialement, le projet devait intégrer des APIs externes (par exemple, Booking.com). Cependant, l’expiration des clés API et les limitations sur les requêtes gratuites ont conduit à utiliser une alternative : des fichiers JSON statiques pour simuler les données.
+Impact : Cette solution limite les données disponibles et empêche l'accès à des informations dynamiques.
+Recommandation :
+Réactiver les intégrations avec des APIs en utilisant des plans adaptés aux besoins du projet.
+Implémenter un mécanisme pour gérer automatiquement l'authentification des clés API.

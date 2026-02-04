@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Hotel Eiffel Tower View",
+        "country": "France",
+        "city": "Paris",
+        "description": "A luxurious hotel with a breathtaking view of the Eiffel Tower.",
+        "price": 300,
+        "image_url": "https://example.com/eiffel.jpg"
+    },
+    {
+        "name": "Champs Elysees Palace",
+        "country": "France",
+        "city": "Paris",
+        "description": "An elegant hotel just steps away from the famous Champs-Elysées.",
+        "price": 350,
+        "image_url": "https://example.com/champs.jpg"
+    },
+    {
+        "name": "Le Meridien",
+        "country": "France",
+        "city": "Nice",
+        "description": "A modern hotel offering a panoramic view of the French Riviera.",
+        "price": 220,
+        "image_url": "https://example.com/nice.jpg"
+    },
+    {
+        "name": "Times Square Hotel",
+        "country": "USA",
+        "city": "New York",
+        "description": "Located in the heart of Times Square, ideal for New York tourists.",
+        "price": 400,
+        "image_url": "https://example.com/times_square.jpg"
+    },
+    {
+        "name": "Central Park Inn",
+        "country": "USA",
+        "city": "New York",
+        "description": "A charming hotel located near Central Park with great city views.",
+        "price": 450,
+        "image_url": "https://example.com/central_park.jpg"
+    },
+    {
+        "name": "Tokyo Tower View Hotel",
+        "country": "Japan",
+        "city": "Tokyo",
+        "description": "Enjoy breathtaking views of Tokyo Tower and a luxurious stay.",
+        "price": 500,
+        "image_url": "https://example.com/tokyo_tower.jpg"
+    },
+    {
+        "name": "Kyoto Garden Resort",
+        "country": "Japan",
+        "city": "Kyoto",
+        "description": "A tranquil resort near the famous Kyoto gardens.",
+        "price": 350,
+        "image_url": "https://example.com/kyoto_garden.jpg"
+    },
+    {
+        "name": "The Ritz London",
+        "country": "United Kingdom",
+        "city": "London",
+        "description": "A historic hotel in the center of London with luxurious rooms.",
+        "price": 600,
+        "image_url": "https://example.com/ritz_london.jpg"
+    },
+    {
+        "name": "Big Ben Hotel",
+        "country": "United Kingdom",
+        "city": "London",
+        "description": "Located near Big Ben and Westminster Abbey, perfect for tourists.",
+        "price": 550,
+        "image_url": "https://example.com/big_ben.jpg"
+    },
+    {
+        "name": "Royal Palace Hotel",
+        "country": "Spain",
+        "city": "Madrid",
+        "description": "A grand hotel in Madrid with a royal touch.",
+        "price": 320,
+        "image_url": "https://example.com/royal_palace.jpg"
+    }
+]

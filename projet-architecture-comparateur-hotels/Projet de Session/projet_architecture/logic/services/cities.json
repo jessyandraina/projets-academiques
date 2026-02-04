@@ -1,0 +1,12 @@
+[
+    {"city": "Paris", "country": "France"},
+    {"city": "London", "country": "United Kingdom"},
+    {"city": "New York", "country": "United States"},
+    {"city": "Tokyo", "country": "Japan"},
+    {"city": "Sydney", "country": "Australia"},
+    {"city": "Rome", "country": "Italy"},
+    {"city": "Berlin", "country": "Germany"},
+    {"city": "Madrid", "country": "Spain"},
+    {"city": "Dubai", "country": "United Arab Emirates"},
+    {"city": "Moscow", "country": "Russia"}
+]
