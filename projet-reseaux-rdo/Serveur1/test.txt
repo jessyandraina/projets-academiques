@@ -1,0 +1,3 @@
+Ceci est un fichier test pour la lecture via Serveur 1.
+Il contient plusieurs lignes.
+Et moins de 500 charactères.
