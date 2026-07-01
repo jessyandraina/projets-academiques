@@ -1,106 +1,159 @@
-# StudyWisely
+# Projets académiques — Génie informatique
 
-StudyWisely est une application mobile Android conçue pour aider les étudiants à mieux organiser leurs périodes de révision en tenant compte de leurs tâches, de leurs échéances, du temps disponible et du lieu d’étude.
+Ce dépôt regroupe une sélection de projets réalisés dans le cadre de mon baccalauréat en génie informatique à l’Université du Québec à Chicoutimi.
 
-L’objectif du projet était d’aller au-delà d’une simple liste de tâches en proposant un outil capable d’associer chaque routine à une date, une priorité, un lieu et un rappel.
+Ces travaux présentent différentes facettes de mon parcours : développement logiciel, programmation mobile, réseaux, bases de données, architecture logicielle et gestion de projet.
 
----
-
-## Aperçu de l’application
-
-StudyWisely permet à l’utilisateur de créer et de gérer ses routines de révision à partir d’une interface claire et accessible.
-
-Chaque routine peut contenir :
-
-- un titre;
-- une description;
-- une date et une heure de réalisation;
-- une date d’examen ou de remise;
-- une priorité calculée automatiquement;
-- un lieu d’étude sélectionné sur une carte;
-- une notification programmée à l’heure prévue.
+L’objectif de ce dépôt est de montrer ma progression technique, ma capacité à structurer une solution et mon intérêt pour les projets qui répondent à des besoins concrets.
 
 ---
 
-## Captures d’écran
+## Projets présentés
 
-### Prototype Figma
+### StudyWisely — Application mobile Android
 
-https://www.figma.com/design/7iDudjRu84un3xvxqasf5k/PP1_Figma_8INF257?node-id=0-1&p=f&t=fJJbwnywkSfHUIV4-0
+Application mobile conçue pour aider les étudiants à organiser leurs routines de révision en tenant compte du temps, des échéances et du lieu d’étude.
 
-### Liste des routines
+Fonctionnalités principales :
 
-L’écran principal présente les routines enregistrées, leur niveau de priorité, la date prévue de réalisation ainsi que l’échéance associée.
+- création, modification et suppression de routines;
+- stockage local avec Room;
+- calcul automatique de la priorité;
+- choix d’un lieu avec Google Maps;
+- itinéraire vers le lieu sélectionné;
+- notifications programmées à l’heure de la tâche.
 
+Technologies :
 
-### Sélection d’un lieu
+`Kotlin` · `Jetpack Compose` · `Room` · `Google Maps API` · `MVVM` · `Android Studio`
 
-L’utilisateur peut rechercher ou sélectionner un lieu sur Google Maps afin de l’associer à une routine et d’obtenir un itinéraire vers celui-ci.
-
+[Consulter le projet](./projet-mobile-studywisely)
 
 ---
 
-## Fonctionnalités principales
+### Protocole RDO — Réseaux
 
-- Affichage de la liste des routines
-- Création d’une nouvelle routine
-- Modification d’une routine existante
-- Suppression avec demande de confirmation
-- Stockage local des données
-- Sélection de la date et de l’heure d’une routine
-- Ajout d’une date d’examen ou de remise
-- Calcul automatique de la priorité selon la proximité de l’échéance
-- Sélection d’un lieu sur Google Maps
-- Recherche d’un lieu par son nom
-- Génération d’un itinéraire vers le lieu choisi
-- Programmation de notifications à l’heure de la routine
+Implémentation en Java d’un protocole client-serveur de transfert de fichiers reposant sur TCP.
 
-### Calcul de la priorité
+Le projet comprend notamment :
 
-La priorité est calculée automatiquement selon le temps restant avant l’examen ou la remise :
+- communication entre clients et serveurs;
+- transfert de fichiers;
+- gestion des requêtes et des réponses;
+- redirection entre plusieurs serveurs pairs;
+- traitement des erreurs de communication.
 
-- **Élevée** : échéance dans trois jours ou moins
-- **Moyenne** : échéance dans sept jours ou moins
-- **Faible** : échéance dans plus de sept jours
+Technologies :
+
+`Java` · `TCP` · `Sockets` · `Architecture client-serveur`
+
+[Consulter le projet](./projet-réseaux-rdo)
+
+---
+
+### Comparateur de prix d’hôtels — Architecture logicielle
+
+Application Web permettant de structurer et de comparer des données d’hôtels selon plusieurs critères.
+
+Le projet met l’accent sur :
+
+- la séparation entre le backend et le frontend;
+- l’organisation modulaire du code;
+- le traitement des données côté serveur;
+- l’intégration d’une base de données;
+- la conception d’une application maintenable.
+
+Technologies :
+
+`Python` · `Flask` · `SQL` · `JavaScript` · `HTML/CSS`
+
+[Consulter le projet](./projet-architecture-comparateur-hôtels)
+
+---
+
+### Système de gestion d’événements — Bases de données
+
+Conception d’une base de données relationnelle destinée à la gestion d’événements.
+
+Le projet comprend :
+
+- l’analyse des besoins;
+- la modélisation des données;
+- la création des tables;
+- les relations entre les entités;
+- les contraintes d’intégrité;
+- les requêtes SQL avancées.
+
+Technologies :
+
+`SQL` · `Modélisation relationnelle` · `Bases de données`
+
+[Consulter le projet](./projet-bases-de-donnees-gestion-evenements)
+
+---
+
+### Outil de gestion de projets et suivi du temps
+
+Application Java permettant d’organiser des projets, de structurer les tâches et d’effectuer le suivi des heures travaillées.
+
+Le projet a été réalisé dans un contexte collaboratif avec une organisation du travail en sprints.
+
+Fonctionnalités principales :
+
+- création et organisation de projets;
+- gestion hiérarchique des éléments;
+- suivi du temps;
+- répartition du travail;
+- développement itératif en équipe.
+
+Technologies :
+
+`Java` · `Programmation orientée objet` · `Gestion de projet` · `Travail en sprints`
+
+[Consulter le projet](./projet-outil-gestion-projets)
+
+---
+
+## Compétences mises en pratique
+
+À travers ces projets, j’ai développé et appliqué des compétences en :
+
+- programmation orientée objet;
+- développement mobile Android;
+- développement Web;
+- architecture client-serveur;
+- bases de données relationnelles;
+- conception d’interfaces;
+- intégration d’API externes;
+- tests fonctionnels et débogage;
+- gestion de versions avec Git et GitHub;
+- travail d’équipe et organisation en sprints;
+- documentation technique.
 
 ---
 
 ## Technologies utilisées
 
-- **Kotlin** — langage principal
-- **Jetpack Compose** — création des interfaces utilisateur
-- **Room** — stockage local des routines
-- **SQLite** — base de données sous-jacente
-- **MVVM** — organisation de l’architecture
-- **Jetpack Navigation** — navigation entre les écrans
-- **Google Maps API** — recherche et sélection de lieux
-- **Geocoder Android** — conversion d’un nom de lieu en coordonnées
-- **AlarmManager** — programmation des rappels
-- **Notifications Android** — affichage des notifications
-- **Coroutines et Flow** — opérations asynchrones et mise à jour des données
-- **Figma** — conception et amélioration du prototype
-- **Git et GitHub** — gestion des versions et collaboration
+| Domaine | Technologies |
+|---|---|
+| Développement mobile | Kotlin, Jetpack Compose, Android Studio |
+| Développement logiciel | Java, Python |
+| Développement Web | Flask, JavaScript, HTML, CSS |
+| Bases de données | SQL, SQLite, Room |
+| Réseaux | TCP/IP, sockets, architecture client-serveur |
+| API et services | Google Maps API, JSON |
+| Outils | Git, GitHub, Figma |
+| Méthodes | MVVM, programmation orientée objet, travail en sprints |
 
 ---
 
-## Architecture
-
-L’application suit une architecture de type **MVVM — Model, View, ViewModel**.
+## Organisation du dépôt
 
 ```text
-app/
-└── src/main/
-    ├── java/com/example/studywisely/
-    │   ├── model/
-    │   │   ├── data/
-    │   │   ├── local/
-    │   │   └── notifications/
-    │   ├── repository/
-    │   ├── ui/
-    │   │   ├── components/
-    │   │   ├── navigation/
-    │   │   ├── screens/
-    │   │   └── theme/
-    │   ├── viewmodel/
-    │   └── MainActivity.kt
-    └── res/
+projets-academiques/
+├── projet-mobile-studywisely/
+├── projet-réseaux-rdo/
+├── projet-architecture-comparateur-hôtels/
+├── projet-bases-de-donnees-gestion-evenements/
+├── projet-outil-gestion-projets/
+└── README.md
