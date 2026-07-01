@@ -24,6 +24,10 @@ Chaque routine peut contenir :
 
 ## Captures d’écran
 
+### Prototype Figma
+
+https://www.figma.com/design/7iDudjRu84un3xvxqasf5k/PP1_Figma_8INF257?node-id=0-1&p=f&t=fJJbwnywkSfHUIV4-0
+
 ### Liste des routines
 
 L’écran principal présente les routines enregistrées, leur niveau de priorité, la date prévue de réalisation ainsi que l’échéance associée.
