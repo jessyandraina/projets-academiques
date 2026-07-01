@@ -28,13 +28,11 @@ Chaque routine peut contenir :
 
 L’écran principal présente les routines enregistrées, leur niveau de priorité, la date prévue de réalisation ainsi que l’échéance associée.
 
-![Liste des routines StudyWisely](images/liste-routines.png)
 
 ### Sélection d’un lieu
 
 L’utilisateur peut rechercher ou sélectionner un lieu sur Google Maps afin de l’associer à une routine et d’obtenir un itinéraire vers celui-ci.
 
-![Sélection d’un lieu avec Google Maps](images/carte-studywisely.png)
 
 ---
 
