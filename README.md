@@ -27,8 +27,6 @@ Technologies :
 
 `Kotlin` · `Jetpack Compose` · `Room` · `Google Maps API` · `MVVM` · `Android Studio`
 
-[Consulter le projet](./projet-mobile-studywisely)
-
 ---
 
 ### Protocole RDO — Réseaux
@@ -47,7 +45,6 @@ Technologies :
 
 `Java` · `TCP` · `Sockets` · `Architecture client-serveur`
 
-[Consulter le projet](./projet-réseaux-rdo)
 
 ---
 
@@ -67,7 +64,6 @@ Technologies :
 
 `Python` · `Flask` · `SQL` · `JavaScript` · `HTML/CSS`
 
-[Consulter le projet](./projet-architecture-comparateur-hôtels)
 
 ---
 
@@ -88,7 +84,6 @@ Technologies :
 
 `SQL` · `Modélisation relationnelle` · `Bases de données`
 
-[Consulter le projet](./projet-bases-de-donnees-gestion-evenements)
 
 ---
 
@@ -110,7 +105,6 @@ Technologies :
 
 `Java` · `Programmation orientée objet` · `Gestion de projet` · `Travail en sprints`
 
-[Consulter le projet](./projet-outil-gestion-projets)
 
 ---
 
